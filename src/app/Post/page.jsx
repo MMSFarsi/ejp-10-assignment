@@ -3,7 +3,7 @@ import React from 'react'
 const Post = () => {
   return (
     <div>
-        <h2>This is Post Page</h2>
+        <h2>All Post </h2>
     </div>
   )
 }
