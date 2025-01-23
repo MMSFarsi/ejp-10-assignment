@@ -9,19 +9,16 @@ const Navbar = async () => {
     <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white shadow-md">
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center py-4">
-          {/* Logo Section */}
           <div className="text-2xl font-bold text-blue-400 hover:text-blue-300 transition duration-300">
             <Link href="/">BlogHaven</Link>
           </div>
 
-          {/* Navigation Links */}
+      
           <div className="space-x-6 flex items-center">
             <Link href="/" className="hover:text-blue-300 transition duration-300">
               Home
             </Link>
-            <Link href="/Post" className="hover:text-blue-300 transition duration-300">
-              Post
-            </Link>
+         
             {user && (
               <Link
                 href="/Profile"
@@ -31,7 +28,6 @@ const Navbar = async () => {
               </Link>
             )}
 
-            {/* Authentication Links */}
             {user ? (
               <Link
                 href="/api/auth/logout"
