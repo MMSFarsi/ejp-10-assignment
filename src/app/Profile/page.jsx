@@ -7,8 +7,7 @@ const Profile = async () => {
 
   return (
     <div className="container mx-auto mt-10 p-6   ">
-      {user ? (
-        <>
+    
           <h1 className="text-3xl font-bold text-blue-600 mb-4">Welcome, {user.family_name || 'User'}!</h1>
           <div className="text-lg">
             <p>
@@ -18,10 +17,6 @@ const Profile = async () => {
               <h2>Email:</h2> {user.email}
             </p>
           </div>
-        </>
-      ) : (
-        <p className="text-xl text-gray-700">Loading your profile...</p>
-      )}
     </div>
   );
 };
