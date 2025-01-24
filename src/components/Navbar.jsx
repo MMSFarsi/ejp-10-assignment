@@ -38,7 +38,7 @@ const Navbar = async () => {
            
             ) : (
              
-                 <LoginLink postLoginRedirectURL="/profile">
+                 <LoginLink postLoginRedirectURL="/api/auth/login">
                  Login
                </LoginLink>
             )}
