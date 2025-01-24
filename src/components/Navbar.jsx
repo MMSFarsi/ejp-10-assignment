@@ -1,4 +1,4 @@
-import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { getKindeServerSession, LogoutLink } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 
 const Navbar = async () => {
@@ -21,7 +21,7 @@ const Navbar = async () => {
             )}
 
             {user ? (
-              <Link href="/api/auth/logout" className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-300" >Logout </Link>
+             <LogoutLink>Logout</LogoutLink>
             ) : (
               <Link
                 href="/api/auth/login"
