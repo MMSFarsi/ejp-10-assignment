@@ -15,12 +15,9 @@ const Navbar = async () => {
 
 
           <div className="space-x-6 flex items-center">
-            <Link href="/" className="hover:text-blue-300 transition duration-300">
-              Home
-            </Link>
-
-            {user && (
-              <Link href="/dashboard/profile" className="hover:text-blue-300 transition duration-300"> profile</Link>
+            <Link href="/" className="hover:text-blue-300 transition duration-300"> Home</Link>
+          {user && (
+              <Link  href="/dashboard/profile" className="hover:text-blue-300 transition duration-300"> profile</Link>
             )}
 
             {user ? (
