@@ -13,18 +13,18 @@ const Navbar = async () => {
             <Link href="/">BlogHaven</Link>
           </div>
 
-      
+
           <div className="space-x-6 flex items-center">
             <Link href="/" className="hover:text-blue-300 transition duration-300">
               Home
             </Link>
-         
+
             {user && (
-              <Link  href="/profile" className="hover:text-blue-300 transition duration-300"> profile</Link>
+              <Link href="/dashboard/profile" className="hover:text-blue-300 transition duration-300"> profile</Link>
             )}
 
             {user ? (
-              <Link href="/api/auth/logout"  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-300" >Logout </Link>
+              <Link href="/api/auth/logout" className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-300" >Logout </Link>
             ) : (
               <Link
                 href="/api/auth/login"
