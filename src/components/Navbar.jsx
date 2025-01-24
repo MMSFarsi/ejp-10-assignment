@@ -20,21 +20,11 @@ const Navbar = async () => {
             </Link>
          
             {user && (
-              <Link
-                href="/profile"
-                className="hover:text-blue-300 transition duration-300"
-              >
-                Profile
-              </Link>
+              <Link  href="/profile" className="hover:text-blue-300 transition duration-300"> profile</Link>
             )}
 
             {user ? (
-              <Link
-                href="/api/auth/logout"
-                className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-300"
-              >
-                Logout
-              </Link>
+              <Link href="/api/auth/logout"  className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded transition duration-300" >Logout </Link>
             ) : (
               <Link
                 href="/api/auth/login"
